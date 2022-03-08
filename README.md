@@ -25,7 +25,7 @@ Feel free to rename or delete files under `playground/` or use them as a referen
 
 First, install mill by referring to the documentation [here](https://com-lihaoyi.github.io/mill).
 
-Second,you should run `make idea` to initialize IntelliJ IDEA project, then you can open it using IDEA.
+Second,you should run `make idea` to initialize IntelliJ IDEA project, then you can open it using IDEA.(**It has been tested on Ubuntu20.04.**)
 
 ___
 
