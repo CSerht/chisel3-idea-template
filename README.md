@@ -26,7 +26,7 @@ Feel free to rename or delete files under `playground/` or use them as a referen
 First, install mill by referring to the documentation [here](https://com-lihaoyi.github.io/mill).
 
 Second,you should run `make idea` to initialize IntelliJ IDEA project, then you can open it using IDEA.(**It has been tested on Ubuntu20.04.**)
-
+> You can install `Scala` and `EasySoc Chisel` Plugins on IDEA.
 ___
 
 To run all tests in this design (recommended for test-driven development):
@@ -34,7 +34,7 @@ To run all tests in this design (recommended for test-driven development):
 make test
 ```
 
-To generate Verilog:
+To generate Verilog(you should edit `Top.scala` to generate different module):
 ```bash
 make verilog
 ```
