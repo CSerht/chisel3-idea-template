@@ -15,7 +15,9 @@ Contents at a glance:
 * `Makefile` - rules to call mill
 * `playground/src/GCD.scala` - GCD source file
 * `playground/src/DecoupledGCD.scala` - another GCD source file
-* `playground/src/Elaborate.scala` - wrapper file to call chisel command with the GCD module
+* `playground/src/resources/BlackBoxRealAdd2.v` - Verilog file, you can add it to chisel Module using BlackBox.
+* `playground/src/BlackBoxRealAdd2.scala` - wrapper Verilog files using BlackBox, you should instantiate it to other modules  so that the black box can be converted to Verilog. 
+* `playground/src/Elaborate.scala` - wrapper file to call chisel command with the Top module
 * `playground/src/Top.scala` - top module, you can edit IO to fit external pins such as FPGA.
 * `playground/test/src/GCDSpec.scala` - GCD tester. **Current project doesn't support utest framework.**
 
@@ -27,6 +29,8 @@ First, install mill by referring to the documentation [here](https://com-lihaoyi
 
 Second,you should run `make idea` to initialize IntelliJ IDEA project, then you can open it using IDEA.(**It has been tested on Ubuntu20.04.**)
 > You can install `Scala` and `EasySoc Chisel` Plugins on IDEA.
+**NOTE**: If you update `build.sc`, you should run `make idea` again to update `.idea` file.
+
 ___
 
 To run all tests in this design (recommended for test-driven development):
